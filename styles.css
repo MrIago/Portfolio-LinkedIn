@@ -1,8 +1,8 @@
 /* styles.css */
 body {
     font-family: 'Arial', sans-serif;
-    background: #f4f4f4;
-    color: #333;
+    background: #333;
+    color: #fff;
 }
 
 header {
@@ -31,8 +31,8 @@ header p.lead {
 }
 
 .competency {
-    background: #D3C89F;
-    color: #333;
+    background: #8E7348;
+    color: #fff;
     padding: 2rem;
     margin: 1rem 0;
     border-radius: 10px;
@@ -42,25 +42,48 @@ header p.lead {
 }
 
 .competency h3 {
+    color: #333;
+    font-weight: bold;
     margin-bottom: 1rem;
 }
 
 .bubble-description {
-    background: #E6E1C5;
+    background: #D3C89F;
     color: #333;
     padding: 1rem;
     border-radius: 10px;
     margin-top: 0.5rem;
 }
 
-.swiper-container {
-    width: 100%;
-    padding: 2rem 0;
+.instagram-posts {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
-.swiper-slide img {
-    width: 100%;
-    height: auto;
+.post {
+    background: #8E7348;
+    color: #fff;
+    margin: 1rem;
+    border-radius: 10px;
+    text-align: center;
+    width: 30%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.post img {
+    max-width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.post p {
+    padding: 1rem;
+    background: #D3C89F;
+    color: #333;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    margin: 0;
 }
 
 footer {
