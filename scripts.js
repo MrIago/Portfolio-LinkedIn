@@ -38,11 +38,13 @@ document.addEventListener('DOMContentLoaded', function () {
         deferredPrompt = e;
         setTimeout(() => {
             installBanner.classList.remove('hidden');
+            installBanner.style.display = 'block';
         }, 3000);
     });
 
     installButton.addEventListener('click', (e) => {
         installBanner.classList.add('hidden');
+        installBanner.style.display = 'none';
         deferredPrompt.prompt();
         deferredPrompt.userChoice.then((choiceResult) => {
             if (choiceResult.outcome === 'accepted') {
