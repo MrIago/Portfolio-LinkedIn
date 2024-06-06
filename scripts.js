@@ -33,10 +33,14 @@ document.addEventListener('DOMContentLoaded', function () {
     const modalImg = document.getElementById("modalImage");
     const closeBtn = document.getElementsByClassName("close")[0];
 
-    document.querySelectorAll('.instagram-post img').forEach(img => {
+    document.querySelectorAll('.carousel-img').forEach(img => {
         img.onclick = function() {
             modal.style.display = "block";
             modalImg.src = this.src;
+        }
+        // Check image aspect ratio
+        if (img.naturalWidth !== img.naturalHeight) {
+            img.nextElementSibling.nextElementSibling.style.display = "block";
         }
     });
 
