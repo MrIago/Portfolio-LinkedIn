@@ -1,0 +1,21 @@
+{
+  "name": "Portfólio de Iago Lima Toledo",
+  "short_name": "Portfólio",
+  "description": "Especialista em Marketing Digital",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#333",
+  "theme_color": "#6C704D",
+  "icons": [
+    {
+      "src": "link_da_imagem_logo_da_empresa.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "link_da_imagem_logo_da_empresa.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
