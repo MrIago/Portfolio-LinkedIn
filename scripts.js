@@ -28,31 +28,19 @@ document.addEventListener('DOMContentLoaded', function () {
             });
     }
 
-    // Install banner
-    let deferredPrompt;
-    const installBanner = document.getElementById('installBanner');
-    const installButton = document.getElementById('installButton');
+    // Modal image viewer
+    const modal = document.getElementById("imageModal");
+    const modalImg = document.getElementById("modalImage");
+    const closeBtn = document.getElementsByClassName("close")[0];
 
-    window.addEventListener('beforeinstallprompt', (e) => {
-        e.preventDefault();
-        deferredPrompt = e;
-        setTimeout(() => {
-            installBanner.classList.remove('hidden');
-            installBanner.style.display = 'block';
-        }, 3000);
+    document.querySelectorAll('.instagram-post img').forEach(img => {
+        img.onclick = function() {
+            modal.style.display = "block";
+            modalImg.src = this.src;
+        }
     });
 
-    installButton.addEventListener('click', (e) => {
-        installBanner.classList.add('hidden');
-        installBanner.style.display = 'none';
-        deferredPrompt.prompt();
-        deferredPrompt.userChoice.then((choiceResult) => {
-            if (choiceResult.outcome === 'accepted') {
-                console.log('User accepted the install prompt');
-            } else {
-                console.log('User dismissed the install prompt');
-            }
-            deferredPrompt = null;
-        });
-    });
+    closeBtn.onclick = function() {
+        modal.style.display = "none";
+    }
 });
