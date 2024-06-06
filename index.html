@@ -67,18 +67,26 @@
     </section>
     <section class="container my-5">
         <h2 class="text-center">Resultados</h2>
-        <div class="instagram-posts">
-            <div class="post">
-                <img src="images/Resultados_google_ads.png" alt="Resultados Google Ads">
-                <p>Resultados Google Ads</p>
-            </div>
-            <div class="post">
-                <img src="images/Primeiros_resultados_na_Hotmart.png" alt="Primeiros resultados na Hotmart">
-                <p>Primeiros resultados na Hotmart</p>
-            </div>
-            <div class="post">
-                <img src="images/Resultados_facebook_ads_anuncios_terrenos_pai.png" alt="Resultados Facebook Ads">
-                <p>Resultados Facebook Ads</p>
+        <div class="instagram-post" data-aos="fade-up">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <!-- Adicione suas imagens e títulos aqui -->
+                    <div class="swiper-slide">
+                        <img src="images/Resultados_google_ads.png" alt="Resultados Google Ads">
+                        <p>Resultados Google Ads</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/Primeiros_resultados_na_Hotmart.png" alt="Primeiros resultados na Hotmart">
+                        <p>Primeiros resultados na Hotmart</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/Resultados_facebook_ads_anuncios_terrenos_pai.png" alt="Resultados Facebook Ads">
+                        <p>Resultados Facebook Ads</p>
+                    </div>
+                </div>
+                <!-- Adiciona os botões de navegação -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
             </div>
         </div>
     </section>
@@ -86,8 +94,10 @@
         <p>Contato: <a href="mailto:iagoltoledo@gmail.com" class="text-white">iagoltoledo@gmail.com</a></p>
         <p>LinkedIn: <a href="https://www.linkedin.com/in/iago-lima-toledo" class="text-white">iago-lima-toledo</a></p>
     </footer>
-    <div id="installBanner" class="install-banner hidden">
-        <button id="installButton">Adicionar à página inicial</button>
+    <!-- Modal para exibir imagem maior -->
+    <div id="imageModal" class="modal hidden">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modalImage">
     </div>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
