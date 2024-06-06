@@ -8,15 +8,14 @@
   "theme_color": "#6C704D",
   "icons": [
     {
-      "src": "link_da_imagem_logo_da_empresa.png",
+      "src": "images/logo.png",
       "sizes": "192x192",
       "type": "image/png"
     },
     {
-      "src": "link_da_imagem_logo_da_empresa.png",
+      "src": "images/logo.png",
       "sizes": "512x512",
       "type": "image/png"
     }
   ]
 }
- 
