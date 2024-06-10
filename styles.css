@@ -24,13 +24,13 @@ header p.lead {
     color: #8E7348;
 }
 
-.competencies {
+.competencies, .education, .experience {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.competency {
+.competency, .education-item, .experience-item {
     background: #8E7348;
     color: #fff;
     padding: 2rem;
@@ -41,7 +41,7 @@ header p.lead {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.competency h3 {
+.competency h3, .education-item h3, .experience-item h3 {
     color: #333;
     font-weight: bold;
     margin-bottom: 1rem;
@@ -133,4 +133,3 @@ footer a {
     font-weight: bold;
     cursor: pointer;
 }
- 
