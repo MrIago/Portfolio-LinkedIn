@@ -1,12 +1,12 @@
 /* styles.css */
 body {
     font-family: 'Arial', sans-serif;
-    background: #333;
-    color: #fff;
+    background: #f5f5f5;
+    color: #333;
 }
 
 header {
-    background: #6C704D;
+    background: #333;
     color: #fff;
     padding: 2rem 0;
 }
@@ -17,38 +17,46 @@ header .logo {
 
 header h1 {
     margin: 0.5rem 0;
+    font-size: 2.5rem;
+    font-weight: bold;
 }
 
 header p.lead {
     font-size: 1.25rem;
-    color: #8E7348;
+    color: #ccc;
+}
+
+header a {
+    font-size: 1.1rem;
 }
 
 .competencies, .education, .experience {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
 }
 
-.competency, .education-item, .experience-item {
-    background: #8E7348;
-    color: #fff;
-    padding: 2rem;
-    margin: 1rem 0;
+.card {
+    background: #fff;
     border-radius: 10px;
-    text-align: center;
-    width: 80%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    transition: transform 0.3s;
 }
 
-.competency h3, .education-item h3, .experience-item h3 {
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card h3 {
     color: #333;
     font-weight: bold;
     margin-bottom: 1rem;
 }
 
-.bubble-description {
-    background: #D3C89F;
+.bubble-description, .image-caption {
+    background: #d3c89f;
     color: #333;
     padding: 1rem;
     border-radius: 10px;
@@ -56,12 +64,12 @@ header p.lead {
 }
 
 .instagram-post {
-    background: #8E7348;
-    color: #fff;
+    background: #fff;
+    color: #333;
     margin: 1rem auto;
     border-radius: 10px;
     text-align: center;
-    max-width: 500px;
+    max-width: 600px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
@@ -71,11 +79,13 @@ header p.lead {
     object-fit: cover;
     aspect-ratio: 1 / 1;
     cursor: pointer;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 
 .image-caption {
     padding: 1rem;
-    background: #D3C89F;
+    background: #d3c89f;
     color: #333;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
@@ -95,13 +105,13 @@ header p.lead {
 }
 
 footer {
-    background: #6C704D;
+    background: #333;
     color: #fff;
     padding: 1rem 0;
 }
 
 footer a {
-    color: #8E7348;
+    color: #d3c89f;
     text-decoration: none;
 }
 
